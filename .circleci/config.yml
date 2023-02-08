@@ -57,8 +57,11 @@ jobs:
           name: Install AWS dependencies
           command: |
            sudo pip install awsebcli
-           sudo apt install awscli
-      
+           sudo pip install awscli
+      - run:
+          name: Configure AWS credentials
+          commands: |
+            aws co     
       - run:
           name: Deploy Api
           # TODO: Install, build, deploy in both apps
