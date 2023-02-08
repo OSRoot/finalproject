@@ -56,8 +56,8 @@ jobs:
       - run:
           name: Install AWS dependencies
           command: |
-           sudo pip install awsebcli
-           sudo pip install awscli
+            sudo pip install awsebcli
+            sudo pip install awscli
       - run:
           name: Configure AWS credentials
           commands: |
