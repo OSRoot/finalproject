@@ -5,8 +5,6 @@ environment-defaults:
   Udagramapi-env-1:
     branch: null
     repository: null
-deploy:
-  artifact: ../www/Archive.zip
 global:
   application_name: udagram-api
   default_ec2_keyname: null
@@ -17,5 +15,5 @@ global:
   platform_name: null
   platform_version: null
   profile: null
-  sc: git
+  sc: null
   workspace_type: Application
