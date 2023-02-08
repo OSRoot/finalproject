@@ -57,12 +57,6 @@ jobs:
           name: Install AWS dependencies
           command: |
            sudo pip install awsebcli
-      
-      - run:
-          name: Deploy App
-          # TODO: Install, build, deploy in both apps
-          command: npm run deploy
-      
 
   # deploy step will run only after manual approval
   deploy:
@@ -71,7 +65,7 @@ jobs:
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
-          node-version: '14.15' 
+          node-version: '14.15.0' 
       - eb/setup
       - aws-cli/setup
       - checkout
