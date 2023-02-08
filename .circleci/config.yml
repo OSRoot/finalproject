@@ -57,6 +57,7 @@ jobs:
           name: Install AWS dependencies
           command: |
            sudo pip install awsebcli
+           sudo apt install awscli
       
       - run:
           name: Deploy Api
