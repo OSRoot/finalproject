@@ -30,7 +30,7 @@ jobs:
           command: npm install
       - run:
           name: Build
-          command: npm run build
+          command: npm run api:build
       # TODO: Lint the frontend
       - run:
           name: Front-End Lint
@@ -46,6 +46,7 @@ jobs:
           name: API Build 
           command: |
             echo "TODO: Build the backend API"
+            npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
