@@ -57,6 +57,16 @@ jobs:
           name: Install AWS dependencies
           command: |
            sudo pip install awsebcli
+      
+      - run:
+          name: Deploy Api
+          # TODO: Install, build, deploy in both apps
+          command: npm run api:deploy
+      - run:
+          name: Deploy Frontend
+          # TODO: Install, build, deploy in both apps
+          command: npm run frontend:deploy
+      
 
   # deploy step will run only after manual approval
   deploy:
