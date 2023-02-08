@@ -47,11 +47,23 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
+      
+      - run:
+          name: Install pip
+          command: |
+        sudo apt update
+        sudo apt install -y python-pip python-dev
+      - run:
+          name: Install AWS dependencies
+          command: |
+        sudo pip install awsebcli
+      
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: npm run deploy
-            
+      
+
   # deploy step will run only after manual approval
   deploy:
     docker:
