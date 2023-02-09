@@ -28,6 +28,11 @@ jobs:
       - run:
           name: Install API Dependencies
           command: npm install
+      
+      - run:
+          name: Set Environment Variables
+          command: npm run set_env
+
       - run:
           name: Build
           command: npm run api:build
