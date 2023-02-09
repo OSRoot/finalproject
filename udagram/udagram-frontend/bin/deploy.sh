@@ -8,4 +8,4 @@ eb setenv AWS_BUCKET=$AWS_BUCKET
 eb setenv AWS_REGION=$AWS_REGION
 eb setenv AWS_PROFILE=$AWS_PROFILE
 eb setenv JWT_SECRET=$JWT_SECRET
-eb setenv URL=$URL
+eb setenv URL=$URL 
