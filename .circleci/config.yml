@@ -65,6 +65,7 @@ jobs:
           command: |
             sudo pip install awsebcli
             sudo pip install awscli
+            cd udagram/udagram-api
             eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
             eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
             eb setenv POSTGRES_HOST=$POSTGRES_HOST
