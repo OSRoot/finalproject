@@ -10,7 +10,7 @@
     "start": "node ./www/server.js",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
-    "set_env":"cd .. && bash set_env.sh",
+    "set_env": "cd .. && bash set_env.sh",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": " eb list && eb use Udagramapi-env-1 && eb deploy",
